@@ -9,15 +9,10 @@ namespace _1newProject
 {
     public class AddAge
     {
-        public void AddUserAge(UserModel.ReturnData userModelReturn)
+        public UserModel.ReturnData AddUserAge(UserModel.ReturnData returnData)
         {
-            userModelReturn.Age= 24;
-
-            Console.WriteLine(userModelReturn.Name);
-            Console.WriteLine(userModelReturn.Mail);
-            Console.WriteLine(userModelReturn.Age);
-            Console.WriteLine("Bu bir denemedir");
-            //deneme yapıldı
+            returnData.Age= 24;   
+            return returnData;
         }
     }
 }
