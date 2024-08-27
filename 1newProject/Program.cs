@@ -6,7 +6,7 @@ internal class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Deneme");
+
         UserModel.Request userModelRequest = new UserModel.Request();
         userModelRequest.TCNumber = "123";
 

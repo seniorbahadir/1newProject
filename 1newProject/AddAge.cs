@@ -16,6 +16,7 @@ namespace _1newProject
             Console.WriteLine(userModelReturn.Name);
             Console.WriteLine(userModelReturn.Mail);
             Console.WriteLine(userModelReturn.Age);
+            
         }
     }
 }
