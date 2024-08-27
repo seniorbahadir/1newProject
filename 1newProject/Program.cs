@@ -6,7 +6,7 @@ internal class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("yeni branch");
+
         UserModel.Request userModelRequest = new UserModel.Request();
         userModelRequest.TCNumber = "123";
 
@@ -15,17 +15,9 @@ internal class Program
 
         //Kullanıcıdan TCKimlik istedim ve compare methodunu çalıştırdım
         Console.WriteLine("Lütfen TC kimlik Giriniz");
-
-        UserModel.ReturnData returnData = new UserModel.ReturnData();
-       
         string TcNumber = Convert.ToString(Console.ReadLine());
-        tCNumberControl.Compare(TcNumber, userModelRequest, returnData);
+        tCNumberControl.Compare(TcNumber, userModelRequest);
 
-        AddAge addAge = new AddAge();
-        addAge.AddUserAge(returnData);
-        Console.WriteLine(returnData.Name);
-        Console.WriteLine(returnData.Mail);
-        Console.WriteLine(returnData.Age);
         //int number = 10;
 
         //// 'ptr' adında bir işaretçi tanımlıyoruz ve 'number' değişkeninin adresini işaret ediyoruz.

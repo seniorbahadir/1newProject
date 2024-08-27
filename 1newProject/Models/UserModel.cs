@@ -11,7 +11,6 @@ namespace _1newProject.Models
       public class Return
         {
             public ReturnData? Data { get; set; }
-            public bool Success { get; set;
         }
         public class ReturnData
         {

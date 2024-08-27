@@ -10,13 +10,13 @@ namespace _1newProject
     public class AddName
     {
         
-        public void AddUserName(UserModel.ReturnData returnData)
+        public void AddUserName(UserModel.ReturnData userModelReturn)
         {
 
-            returnData.Name="Bahadır";
+            userModelReturn.Name="Bahadır";
 
             AddMail addMail = new AddMail();
-            addMail.AddUserMail(returnData);
+            addMail.AddUserMail(userModelReturn);
         }
     }
 }

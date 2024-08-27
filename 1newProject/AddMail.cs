@@ -9,12 +9,12 @@ namespace _1newProject
 {
     public class AddMail
     {
-        public void AddUserMail(UserModel.ReturnData returnData)
+        public void AddUserMail(UserModel.ReturnData userModelReturn)
         {
-            returnData.Mail = "kayhan1901@gmail.com";
+            userModelReturn.Mail = "kayhan1901@gmail.com";
 
            AddAge addAge = new AddAge();
-           addAge.AddUserAge(returnData);
+           addAge.AddUserAge(userModelReturn);
 
         }
     }

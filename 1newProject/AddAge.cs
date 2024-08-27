@@ -9,10 +9,13 @@ namespace _1newProject
 {
     public class AddAge
     {
-        public UserModel.ReturnData AddUserAge(UserModel.ReturnData returnData)
+        public void AddUserAge(UserModel.ReturnData userModelReturn)
         {
-            returnData.Age= 24;   
-            return returnData;
+            userModelReturn.Age= 24;
+
+            Console.WriteLine(userModelReturn.Name);
+            Console.WriteLine(userModelReturn.Mail);
+            Console.WriteLine(userModelReturn.Age);
         }
     }
 }
