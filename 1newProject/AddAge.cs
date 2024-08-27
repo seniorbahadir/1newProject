@@ -16,7 +16,8 @@ namespace _1newProject
             Console.WriteLine(userModelReturn.Name);
             Console.WriteLine(userModelReturn.Mail);
             Console.WriteLine(userModelReturn.Age);
-            
+            Console.WriteLine("Bu bir denemedir");
+            //deneme yapıldı
         }
     }
 }
