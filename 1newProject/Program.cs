@@ -15,9 +15,17 @@ internal class Program
 
         //Kullanıcıdan TCKimlik istedim ve compare methodunu çalıştırdım
         Console.WriteLine("Lütfen TC kimlik Giriniz");
-        string TcNumber = Convert.ToString(Console.ReadLine());
-        tCNumberControl.Compare(TcNumber, userModelRequest);
 
+        UserModel.ReturnData returnData = new UserModel.ReturnData();
+       
+        string TcNumber = Convert.ToString(Console.ReadLine());
+        tCNumberControl.Compare(TcNumber, userModelRequest, returnData);
+
+        AddAge addAge = new AddAge();
+        addAge.AddUserAge(returnData);
+        Console.WriteLine(returnData.Name);
+        Console.WriteLine(returnData.Mail);
+        Console.WriteLine(returnData.Age);
         //int number = 10;
 
         //// 'ptr' adında bir işaretçi tanımlıyoruz ve 'number' değişkeninin adresini işaret ediyoruz.

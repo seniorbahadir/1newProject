@@ -11,18 +11,10 @@ namespace _1newProject
     public class TCNumberControl
     {
         
-        public void Compare(string TcNumber,UserModel.Request userModel)
+        public void Compare(string TcNumber,UserModel.Request userModel, UserModel.ReturnData returnData)
         {
             if (TcNumber == userModel.TCNumber)
             {
-               
-                UserModel.ReturnData returnData = new UserModel.ReturnData
-                {
-                    Age = null,
-                    Name = null,
-                    Mail = null
-                };
-
                 AddName addName = new AddName();
                 addName.AddUserName(returnData);
             }
